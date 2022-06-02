@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Link do olho de mostrar senha-->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <!--responsive-->
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="shortcut icon" href="imagemacad/WhatsApp Image 2022-03-22 at 11.22.23.jpeg" type="image/x-icon">
+    <!--Scripts-->
+    
+    <script src="app.js" type="module"></script>
+    
+    <title>Cadastro de Funcionario</title>
+</head>
+<body>
+    <header>
+        <!--conteiner e a caixa e guarda o logo -->
+        <div class="container">
+            <h2 class="logo"><img class="box-filme" src="imagemacad/WhatsApp Image 2022-03-22 at 11.22.23.jpeg" alt=""></h2>
+
+        </div>
+    </header>
+
+    <div class="fotoprincipallogin">
+        <div class="container">
+
+          <!--FORMULÁRIO DE CADASTRO-->
+          <div id="cadastro">
+            <form method="post" action=""> 
+              <h1>Cadastro dos Funcionario</h1> 
+               
+              <p> 
+                <label for="nome_cad">Nome completo:</label>
+                <input id="nome_cad" name="nome_cad" required="required" data-tipo="nome" type="text" placeholder="" />
+              </p>
+               
+              <p> 
+                <label for="email_cad">E-mail:</label>
+                <input id="email_cad" name="email_cad" required="required" type="email" placeholder=""/> 
+              </p>
+               
+              <p> 
+                <label for="cpf_cad">CPF:</label>
+                <input id="cpf_cad" name="cpf_cad" required="required" type="cpf" placeholder=""/> 
+              </p>
+              
+              <p> 
+                <label for="senha_cad">Senha: </label>
+                <input type="password" id="senha_cad"  name="senha_cad" required  minlength="4"/>
+                <!--<input type="checkbox" onclick="mostrarOcultarSenha()">-->
+                <p>Mostrar Senha: <span class="lnr lnr-eye" onclick="mostrarOcultarSenha()"></span></p>
+                
+              </p>
+               
+              <p> 
+                <label for="dt_cad">Data de Nascimento:</label>
+                <input type="date" id="dt_cad" name="dt_cad" required="required"  placeholder="ex. 13/07/2001"/>
+              </p>
+
+              <p>
+                <label for="disponibilidade">Horarios com disponibilidade:</label>
+                <li>Manhã:<input type="checkbox" name="" id="manha" ></li>
+                <li>Tarde:<input type="checkbox" name="" id="tarde" ></li>
+                <li>Noite:<input type="checkbox" name="" id="noite" ></li>
+              </p>
+
+              <p> 
+                <label for="cep">CEP:</label>
+                <input
+                class="input"
+                pattern="[\d]{5}-?[\d]{3}"
+                required
+                data-tipo="cep"
+                type="text"
+                name="cep"
+                id="cep"
+                />
+                
+              </p>
+
+              <p> 
+                <label for="estado">Estado:</label>
+                <input type="text" class="input" id="estado" name="estado" data-tipo="estado" required="required" />
+              </p>
+
+              <p> 
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="input" id="cidade" name="cidade"  data-tipo="cidade" required="required" />
+              </p>
+
+              <p> 
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" class="input" id="logradouro" name="logradouro" data-tipo="logradouro" required="required" />
+              </p>
+
+              <p> 
+                <label for="bairro">Bairro:</label>
+                <input type="text" class="input" id="bairro" name="bairro" data-tipo="bairro" required="required" />
+              </p>
+              <p> 
+                <label for="numero">Numero:</label>
+                <input type="number" id="numero" name="numero" data-tipo="numero" class="input" required="required" />
+              </p>
+
+              <p> 
+                <input type="submit" value="Cadastrar"/> 
+              </p>
+               
+              <p class="link-funcionario">  
+                Já tem uma conta?
+                <a href="login-funcionario.html"> Ir para Login de Funcionario </a>
+              </p>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7190e376ad.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"></script>
+    <script src="mostrarsenha.js"></script>
+    
+    
+</body>
+</html>

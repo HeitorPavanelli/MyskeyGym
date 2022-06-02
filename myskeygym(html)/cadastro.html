@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Link do olho de mostrar senha-->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <!--responsive-->
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="shortcut icon" href="imagemacad/WhatsApp Image 2022-03-22 at 11.22.23.jpeg" type="image/x-icon">
+    <!--Script JS-->
+    <script src="app.js" type="module"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <!--conteiner e a caixa e guarda o logo -->
+        <div class="container">
+            <h2 class="logo"><img class="box-filme" src="imagemacad/WhatsApp Image 2022-03-22 at 11.22.23.jpeg" alt=""></h2>
+
+        </div>
+    </header>
+
+    <div class="fotoprincipallogin">
+        <div class="container">
+
+          <!--FORMULÁRIO DE CADASTRO-->
+          <div id="cadastro">
+            <form method="get" action="/netflixclone/plano-sucesso.html"> 
+              <h1>Cadastro</h1> 
+               
+              <p> 
+                <label for="nome_cad">Nome:</label>
+                <input id="nome_cad" name="nome_cad" required type="text" data-tipo="nome"/>
+              </p>
+               
+              <p> 
+                <label for="email_cad">E-mail:</label>
+                <input id="email_cad" name="email_cad" required type="email" data-tipo="email"/> 
+              </p>
+               
+              <p> 
+                <label for="cpf">CPF:</label>
+                <input id="cpf" name="cpf" required  type="cpf" data-tipo="cpf"  minlength="11"   /> 
+              </p>
+
+              <p> 
+                <label for="senha_cad">Senha: </label>
+                <input id="senha_cad" name="senha_cad" required type="password" data-tipo="senha" />
+                <p>Mostrar Senha: <span class="lnr lnr-eye" onclick="mostrarOcultarSenha()"></span></p>
+              </p>
+               
+                            
+              <p> 
+                <label for="tel_cad">Telefone:</label>
+                <input id="tel_cad" name="tel_cad" required type="telefone" placeholder="ex. (16) 98116-3021" data-tipo="telefone"/>
+              </p>
+
+              <p> 
+                <label for="peso_cad">Peso Atual:</label>
+                <input id="peso_cad" name="peso_cad"  type="peso" data-tipo="peso"/>
+              </p>
+
+              <p> 
+                <label for="dt_cad">Data de Nascimento:</label>
+                <input type=date id="dt_cad" name="dt_cad" required data-tipo="dt_nascimento"/>
+              </p>
+
+              <p> 
+                <input type="submit" value="Cadastrar"/> 
+              </p>
+               
+              <p class="link">  
+                Já tem conta?
+                <a href="login.html"> Ir para Login </a>
+              </p>
+            </form>
+          </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <script src="https://kit.fontawesome.com/7190e376ad.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"></script>
+    <script src="mostrarsenha.js"></script>
+</body>
+</html>

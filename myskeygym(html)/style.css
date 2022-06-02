@@ -1,0 +1,488 @@
+/*PAGINA HTML*/
+    :root{
+        --vermelho:#E50914;
+        --preto:#141414;
+        --laranja: rgb(255, 142, 36);
+        --azul: rgba(35,157,146);
+    }
+    /*para zerar a configuração css*/
+    *{
+        padding: 0;
+    }
+
+    /*elementos base*/
+    body{
+        background-color: var(--preto);
+        font-family: Arial,sans-serif;
+        color: white;
+    }
+
+    header .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+
+    header nav a{
+        text-decoration: none;
+        color: #AAA;
+        margin-right: 30px;
+    }
+
+    header nav a:hover{
+        color:var(--laranja)
+    }
+
+    /*filme principal*/
+    .fotoprincipal{
+
+        font-size: 16px;
+        background:  linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.50)100%),url('imagemacad/pexels-cesar-galeão-3253501.jpg');
+        height: 470px;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    .fotoprincipal .titulo{
+        margin-top: 0%;
+        font-size: 50px;
+        font-family: Arial,sans-serif;
+        color: var(--azul);
+    }
+    .fotoprincipal .descricao{
+        margin-top: 10px;
+        margin-bottom: 100px;
+        font-size: 20px;
+        color: var(--laranja);
+    }
+
+    .botao{
+        background-color: rgba(0,0,0,.50);
+        border: none;
+        color: white;
+
+        padding: 15px 30px;
+        margin-right: 15px;
+        font-size: 13px;
+
+        cursor: pointer;
+        transition: .50s ease all;
+    }
+    .botao:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .botao i{
+        margin-right: 8px;
+    }
+
+    .fotoprincipal .container{
+        width: 60%;
+
+        margin-left: 20px;
+    }
+    .box-filme{
+        height: 100%;
+        width: 100%;
+        display: block;
+        
+    }
+
+    .carrosel-filmes{
+        margin-top: 20px;
+    }
+
+    .trailer h2{
+        text-align: center;
+        margin: 100px;
+        font-family: Arial,sans-serif;
+    }
+
+        /*TRAILER*/
+        header .logotrailer{
+            text-align: center;
+            max-width: 10%;
+            max-height: 10%;
+        }
+
+        .video{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .botaovoltar{
+            background-color: rgba(0,0,0,.50);
+            border: none;
+            color: white;
+
+            padding: 15px 30px;
+            margin-right: 50px;
+            font-size: 18px;
+            text-align: center;
+
+            cursor: pointer;
+            transition: .50s ease all;
+
+        }
+
+        .botaovoltar:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .botaovoltar i{
+            margin-right: 8px;
+        }
+        .voltar{
+            margin: 50px;
+            text-align: center;
+        }
+
+
+
+/*FUNDO DE TELA LOGIN*/
+.fotoprincipallogin{
+    background:  linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('imagemacad/pexels-cesar-galeão-3253501.jpg')50%;
+    background-size: cover;
+
+}
+.fotoprincipallogin .container{
+    width: 100%;
+}
+
+/*TITULO LOGIN*/
+.fotoprincipallogin h1{
+    font-size: 48px;
+    color: var(--azul);
+    padding: 2px 0 10px 0;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*LINHA DE CIMA*/
+.fotoprincipallogin h1:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+    background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+
+/*ESPACAMENTO ENTRE LINHAS*/
+.fotoprincipallogin p{
+    margin-bottom:15px;
+}
+   
+/*estilo dos input,  menos o checkbox */
+input:not([type="checkbox"]){
+    width: 100%;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #b2b2b2;
+
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+   
+/*estilo do botão submit */
+input[type="submit"]{
+
+    width: 100%!important;
+    cursor: pointer;  
+    background: rgb(61, 157, 179);
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff;   
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    transition: all 0.2s linear;
+}
+   
+/*estilo do botão submit no hover */
+input[type="submit"]:hover{
+    background: #4ab3c6;
+    }
+    .link{
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    border-top: 1px solid #dbe5e8;
+
+    -webkit-border-radius: 0 0  5px 5px;
+    border-radius: 0 0  5px 5px;
+}
+   
+.link a {
+    font-weight: bold;
+    background: #f7f8f1;
+    padding: 6px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    border: 1px solid #cbd518;
+
+    -webkit-border-radius: 4px;
+    border-radius: 4px;  
+
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s  linear;
+}
+.link-funcionario a{
+    font-weight: bold;
+    background: black;
+    padding: 5px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    border: 1px solid #cbd518;
+
+    -webkit-border-radius: 4px;
+    border-radius: 4px;  
+
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s  linear;
+}
+
+.link a:hover {
+    color: #39bfd7;
+    background: #f7f7f7;
+    border: 1px solid #4ab3c6;
+}
+
+#cadastro, 
+#login{
+
+
+    padding: 10px 35% 20px;
+
+    background: linear-gradient(rgba(0,0,0,.99),rgba(0,0,0,.50)70%);
+
+
+    border-radius: 5px;
+
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.um{
+    font-size: 22px;
+    text-align: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.dois{
+    font-size: 15px;
+    text-align: right;
+    display: block;
+    margin-right: 15px;
+    color: rgb(85, 84, 84);
+}
+.divider{
+    margin: 20px 0;
+     height: 2px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #333;
+     opacity: 0.3;
+     border: 0 none;
+     margin-top: 10px;
+}
+.plan1{
+    height: 100%;
+    width: 450px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(245, 1, 1, 0.925);
+    padding: 20px 30px;
+    background: #fafaff28;
+}
+.plan2{
+    height: 100%;
+    width: 450px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(245, 1, 1, 0.925);
+    padding: 20px 30px;
+    background: #fafaff28;
+}
+.plan3{
+    height: 100%;
+    width: 450px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(245, 1, 1, 0.925);
+    padding: 20px 30px;
+    background: #fafaff28;
+}
+
+footer{
+    padding: 150px;
+}
+
+
+.planos h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.planos li{
+    display: inline-block;
+    text-align: center;
+    width: 25%; 
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #fafaff28;
+    ;
+    font-style:normal;
+}
+.planos li ol{
+    text-align: center;
+    font-size: 17px ;
+    padding: 10px;
+
+}
+.planos li p{
+    font-size: 20px;
+    font-weight: 20px;
+}
+.botao1{
+    font-weight: bold;
+    margin-left: 47px;
+    background-color: #39bfd7;
+    padding: 7.5px;
+    border-radius: 10%;
+    border-color: white;
+}
+.botao1:active{
+    cursor: pointer;
+}
+.botao1:hover{
+    cursor: pointer;
+}
+.botao2{
+    font-weight: bold;
+    margin-left: 30px;
+    background-color: #39bfd7;
+    padding: 7px;
+    border-radius: 10%;
+    border-color: white;
+}
+.botao2:active{
+    cursor: pointer;
+}
+.botao2:hover{
+    cursor: pointer;
+}
+.botao3{
+    font-weight: bold;
+    margin-left: 40px;
+    background-color: #39bfd7;
+    padding: 7px;
+    border-radius: 10%;
+    border-color: white;
+}
+.botao3:active{
+    cursor: pointer;
+}
+.botao3:hover{
+    cursor: pointer;
+}
+div strong{
+    margin-left: 100px;
+}
+.possui-erro-validacao{
+    border-color: red;
+}
+.erro-validacao{
+    margin-top: 3px;
+    color: red;
+    font-size: 14px;
+}
+.vamos{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+.input-container{
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 17px;
+}
+.estrutura{
+    height: 100%;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.box {
+    height: 100%;
+    width: 450px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px 30px;
+    background: #000000;
+  }
+.botao-compra{
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 254, 254);
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(0, 238, 255);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 35%;
+    margin-top: 20px;
+    justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.botao-compra:hover{
+    cursor: pointer;
+}
+.label{
+    display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.validade{
+font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
